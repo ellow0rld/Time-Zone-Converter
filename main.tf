@@ -41,7 +41,7 @@ resource "aws_instance" "app_server" {
               systemctl start httpd
               systemctl enable httpd
               cd /var/www/html
-              git clone git@github.com:ellow0rld/Time-Zone-Converter.git site
+              git clone https://github.com/ellow0rld/Time-Zone-Converter.git site
               cp -r site/* .
               rm -rf site
             EOF
